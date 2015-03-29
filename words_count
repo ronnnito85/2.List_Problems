@@ -1,0 +1,19 @@
+wor = input("Enter word: ")
+n = input("Enter count of words: ")
+n = int(n)
+
+count = 1
+
+words = []
+
+while count <= n:
+    word = input("Enter word: ")
+    words = words + [word]
+    count += 1
+
+con = 0
+
+for wordi in words:
+    if wor == wordi:
+        con += 1
+print("The search word %s is found %d times" % (wor, con))
