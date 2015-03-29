@@ -1,0 +1,16 @@
+n = input("Enter count of words: ")
+n = int(n)
+
+count = 1
+
+words = []
+
+while count <= n:
+    word = input("Enter word: ")
+    words = words + [word]
+    count += 1
+print (words)
+
+words = sorted(words)
+
+print("Sorted names are: %s" % words)
