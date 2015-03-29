@@ -1,0 +1,20 @@
+n = input("Enter count of numbers: ")
+n = int(n)
+
+count = 1
+sum = 0
+numbers = []
+
+while count <= n:
+    number = input("Enter number: ")
+    number = int(number)
+    numbers = numbers + [number]
+    count += 1
+
+
+min = numbers[0]
+
+for num in numbers:
+    if num < min:
+        min = num
+print("The mainimum number is %d" % min)
